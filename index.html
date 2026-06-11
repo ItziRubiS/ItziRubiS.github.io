@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic page setup -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Itzi Rubi Saavedra | Portfolio</title>
 
     <style>
+        /* ---------------------------
+           GLOBAL RESET (removes default spacing)
+        ---------------------------- */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        /* ---------------------------
+           PAGE BACKGROUND + TEXT STYLE
+        ---------------------------- */
         body {
             font-family: "Segoe UI", Arial, sans-serif;
-            background: #dfe8e1; /* sage green */
+            background: #a1bfa9; /* sage green background */
             color: #2f3a34;
             line-height: 1.6;
         }
 
+        /* ---------------------------
+           HEADER SECTION (top banner)
+        ---------------------------- */
         header {
-            background: linear-gradient(135deg, #d66a7a, #b24a5f); /* deeper pastel red/pink */
+            background: linear-gradient(135deg, #d66a7a, #b24a5f); /* pastel red/pink */
             color: white;
             text-align: center;
             padding: 100px 20px;
@@ -37,12 +48,18 @@
             margin: auto;
         }
 
+        /* ---------------------------
+           MAIN CONTENT WRAPPER
+        ---------------------------- */
         main {
             max-width: 1000px;
             margin: 40px auto;
             padding: 0 20px;
         }
 
+        /* ---------------------------
+           EACH SECTION BOX (About, Projects, Skills)
+        ---------------------------- */
         section {
             background: #eef3ef; /* light sage panel */
             padding: 30px;
@@ -51,25 +68,32 @@
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
         }
 
+        /* Section titles */
         h2 {
             color: #5a4a9b; /* deep lavender */
             margin-bottom: 15px;
             font-size: 2rem;
         }
 
+        /* ---------------------------
+           PROJECT CARD STYLE
+        ---------------------------- */
         .project-card {
             background: #f4f7f5;
-            border-left: 6px solid #c85c6c; /* muted red/pink */
+            border-left: 6px solid #c85c6c; /* accent line */
             padding: 20px;
             border-radius: 12px;
             margin-top: 15px;
         }
 
         .project-card h3 {
-            color: #6d5aa7; /* lavender */
+            color: #6d5aa7;
             margin-bottom: 10px;
         }
 
+        /* ---------------------------
+           BUTTON STYLE (link styled as button)
+        ---------------------------- */
         .btn {
             display: inline-block;
             margin-top: 15px;
@@ -82,22 +106,33 @@
             transition: transform 0.2s ease;
         }
 
+        /* Button hover effect */
         .btn:hover {
             transform: translateY(-3px);
         }
 
+        /* ---------------------------
+           FOOTER (bottom of page)
+        ---------------------------- */
         footer {
             text-align: center;
             padding: 30px;
             color: #4b5a52;
         }
 
+        /* ---------------------------
+           HIGHLIGHTED WORDS (important text)
+        ---------------------------- */
         .highlight {
             color: #6d5aa7; /* deep lavender purple */
             font-weight: bold;
         }
 
+        /* ---------------------------
+           MOBILE RESPONSIVE DESIGN
+        ---------------------------- */
         @media (max-width: 768px) {
+
             header h1 {
                 font-size: 2.5rem;
             }
@@ -115,6 +150,9 @@
 
 <body>
 
+    <!-- =========================
+         HEADER SECTION
+    ========================== -->
     <header>
         <h1>Itzi Rubi Saavedra</h1>
         <p>
@@ -122,37 +160,45 @@
         </p>
     </header>
 
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
     <main>
 
+        <!-- ABOUT ME SECTION -->
         <section>
             <h2>About Me</h2>
+
             <p>
-                Hi! I'm <span class="highlight">Itzi Rubi Saavedra</span>, a high school senior preparing to graduate and pursue a future in engineering. I am especially interested in <span class="highlight">Mechanical Engineering</span> and enjoy learning how technology, design, and problem-solving come together to create innovative solutions.
+                Hi! I'm <span class="highlight">Itzi Rubi Saavedra</span>, a high school senior preparing to graduate and pursue a future in engineering. I am especially interested in <span class="highlight">Mechanical Engineering</span> and enjoy learning how technology, design, and problem-solving come together.
             </p>
 
             <br>
 
             <p>
-                Throughout high school, I have challenged myself through advanced coursework, including <span class="highlight">AP Computer Science Principles (AP CSP)</span> and <span class="highlight">AP Computer Science A (AP CSA)</span>. These courses have helped me develop programming, computational thinking, and problem-solving skills while strengthening my passion for STEM.
+                Throughout high school, I have taken advanced courses like <span class="highlight">AP Computer Science Principles</span> and <span class="highlight">AP Computer Science A</span>, building my programming and problem-solving skills.
             </p>
 
             <br>
 
             <p>
-                As I continue my education, I look forward to combining my interests in engineering and computer science to design, build, and improve technologies that make a positive impact.
+                I want to use engineering and computer science to create technologies that make life easier and more efficient.
             </p>
         </section>
 
+        <!-- PROJECTS SECTION -->
         <section>
             <h2>Projects</h2>
 
+            <!-- Project Card -->
             <div class="project-card">
                 <h3>My Portfolio Website</h3>
+
                 <p>
                     This website showcases my work, interests, and progress as a computer science student.
-                    More projects will be added as I continue learning and building.
                 </p>
 
+                <!-- Link button -->
                 <a href="https://itzirubis.github.io/" target="_blank" class="btn">
                     Visit My Website
                 </a>
@@ -160,8 +206,10 @@
 
         </section>
 
+        <!-- SKILLS SECTION -->
         <section>
             <h2>Skills</h2>
+
             <p>
                 • Java Programming<br>
                 • Problem Solving<br>
@@ -176,152 +224,9 @@
 
     </main>
 
-    <footer>
-        <p>© 2026 Itzi Rubi Saavedra | Built with HTML & CSS</p>
-    </footer>
-
-</body>
-</html>            margin: auto;
-        }
-
-        main {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        section {
-            background: #ffffff;
-            padding: 30px;
-            margin-bottom: 30px;
-            border-radius: 16px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-        }
-
-        h2 {
-            color: #a7f3d0;
-            margin-bottom: 15px;
-            font-size: 2rem;
-        }
-
-        .project-card {
-            background: #faf5ff;
-            border-left: 6px solid #f9a8d4;
-            padding: 20px;
-            border-radius: 12px;
-            margin-top: 15px;
-        }
-
-        .project-card h3 {
-            color: #a78bfa;
-            margin-bottom: 10px;
-        }
-
-        .btn {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 12px 22px;
-            background: linear-gradient(135deg, #f9a8d4, #c4b5fd);
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-            transition: transform 0.2s ease;
-        }
-
-        .btn:hover {
-            transform: translateY(-3px);
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: #777;
-        }
-
-        .highlight {
-            color: #a7f3d0;
-            font-weight: bold;
-        }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.5rem;
-            }
-
-            header p {
-                font-size: 1rem;
-            }
-
-            h2 {
-                font-size: 1.6rem;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <h1>Itzi Rubi Saavedra</h1>
-        <p>
-            AP Computer Science Student • Future Mechanical Engineer • Creative Problem Solver
-        </p>
-    </header>
-
-    <main>
-
-        <section>
-            <h2>About Me</h2>
-            <p>
-                Hi! I'm <span class="highlight">Itzi Rubi Saavedra</span>, a high school senior preparing to graduate and pursue a future in engineering. I am especially interested in <span class="highlight">Mechanical Engineering</span> and enjoy learning how technology, design, and problem-solving come together to create innovative solutions.
-            </p>
-
-            <br>
-
-            <p>
-                Throughout high school, I have challenged myself through advanced coursework, including <span class="highlight">AP Computer Science Principles (AP CSP)</span> and <span class="highlight">AP Computer Science A (AP CSA)</span>. These courses have helped me develop programming, computational thinking, and problem-solving skills while strengthening my passion for STEM.
-            </p>
-
-            <br>
-
-            <p>
-                As I continue my education, I look forward to combining my interests in engineering and computer science to design, build, and improve technologies that make a positive impact.
-            </p>
-        </section>
-
-        <section>
-            <h2>Projects</h2>
-
-            <div class="project-card">
-                <h3>My Portfolio Website</h3>
-                <p>
-                    This website showcases my work, interests, and progress as a computer science student.
-                    More projects will be added as I continue learning and building.
-                </p>
-
-                <a href="https://itzirubis.github.io/" target="_blank" class="btn">
-                    Visit My Website
-                </a>
-            </div>
-
-        </section>
-
-        <section>
-            <h2>Skills</h2>
-            <p>
-                • Java Programming<br>
-                • Problem Solving<br>
-                • Computational Thinking<br>
-                • Engineering Design Concepts<br>
-                • Teamwork & Collaboration<br>
-                • AP Computer Science Principles (AP CSP)<br>
-                • AP Computer Science A (AP CSA)<br>
-                • AP Physics 1<br>
-            </p>
-        </section>
-
-    </main>
-
+    <!-- =========================
+         FOOTER SECTION
+    ========================== -->
     <footer>
         <p>© 2026 Itzi Rubi Saavedra | Built with HTML & CSS</p>
     </footer>
