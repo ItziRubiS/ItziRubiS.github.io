@@ -14,13 +14,13 @@
 
         body {
             font-family: "Segoe UI", Arial, sans-serif;
-            background: #fdfcff;
-            color: #444;
+            background: #dfe8e1; /* sage green */
+            color: #2f3a34;
             line-height: 1.6;
         }
 
         header {
-            background: linear-gradient(135deg, #c4b5fd, #f9a8d4);
+            background: linear-gradient(135deg, #d66a7a, #b24a5f); /* deeper pastel red/pink */
             color: white;
             text-align: center;
             padding: 100px 20px;
@@ -35,6 +35,153 @@
             font-size: 1.2rem;
             max-width: 700px;
             margin: auto;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: #eef3ef; /* light sage panel */
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        h2 {
+            color: #5a4a9b; /* deep lavender */
+            margin-bottom: 15px;
+            font-size: 2rem;
+        }
+
+        .project-card {
+            background: #f4f7f5;
+            border-left: 6px solid #c85c6c; /* muted red/pink */
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 15px;
+        }
+
+        .project-card h3 {
+            color: #6d5aa7; /* lavender */
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 22px;
+            background: linear-gradient(135deg, #d66a7a, #b24a5f);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: transform 0.2s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #4b5a52;
+        }
+
+        .highlight {
+            color: #6d5aa7; /* deep lavender purple */
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Itzi Rubi Saavedra</h1>
+        <p>
+            AP Computer Science Student • Future Mechanical Engineer • Creative Problem Solver
+        </p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>About Me</h2>
+            <p>
+                Hi! I'm <span class="highlight">Itzi Rubi Saavedra</span>, a high school senior preparing to graduate and pursue a future in engineering. I am especially interested in <span class="highlight">Mechanical Engineering</span> and enjoy learning how technology, design, and problem-solving come together to create innovative solutions.
+            </p>
+
+            <br>
+
+            <p>
+                Throughout high school, I have challenged myself through advanced coursework, including <span class="highlight">AP Computer Science Principles (AP CSP)</span> and <span class="highlight">AP Computer Science A (AP CSA)</span>. These courses have helped me develop programming, computational thinking, and problem-solving skills while strengthening my passion for STEM.
+            </p>
+
+            <br>
+
+            <p>
+                As I continue my education, I look forward to combining my interests in engineering and computer science to design, build, and improve technologies that make a positive impact.
+            </p>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+
+            <div class="project-card">
+                <h3>My Portfolio Website</h3>
+                <p>
+                    This website showcases my work, interests, and progress as a computer science student.
+                    More projects will be added as I continue learning and building.
+                </p>
+
+                <a href="https://itzirubis.github.io/" target="_blank" class="btn">
+                    Visit My Website
+                </a>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <p>
+                • Java Programming<br>
+                • Problem Solving<br>
+                • Computational Thinking<br>
+                • Engineering Design Concepts<br>
+                • Teamwork & Collaboration<br>
+                • AP Computer Science Principles (AP CSP)<br>
+                • AP Computer Science A (AP CSA)<br>
+                • AP Physics 1<br>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Itzi Rubi Saavedra | Built with HTML & CSS</p>
+    </footer>
+
+</body>
+</html>            margin: auto;
         }
 
         main {
